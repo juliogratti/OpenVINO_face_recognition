@@ -1,0 +1,11 @@
+
+python3 ./face_recognition.py -i foto_multidao_01.jpg -m_fd models/face-detection-retail-0004/FP32/face-detection-retail-0004.xml -m_lm models/landmarks-regression-retail-0009/FP32/landmarks-regression-retail-0009.xml -m_reid models/face-reidentification-retail-0095/FP32/face-reidentification-retail-0095.xml --verbose -fg data -tl
+
+
+
+#TREINAMENTO COM PARAMETROS
+python3 ./CAPTURA_teste.py subject04.sad
+
+# Downloader models
+/opt/intel/openvino/deployment_tools/tools/model_downloader/./downloader.py --name face-detection-0106 --output_dir ~/PycharmProjects/OpenVino/FaceRecognition_OpenVino/models
+
